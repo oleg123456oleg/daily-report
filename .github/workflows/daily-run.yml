@@ -2,7 +2,7 @@ name: Daily Report
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 9 * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,6 @@ jobs:
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_PROJECT_ID: ${{ secrets.GOOGLE_PROJECT_ID }}
-          TELEGRAM_API_KEY: ${{ secrets.TELEGRAM_API_KEY }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_API_KEY: ${{ '8867519706:AAGMCgZzGyJJwBmDC-mIlIeLe8iS5aswtSo' }}
+          TELEGRAM_CHAT_ID: ${{ '475235122' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
